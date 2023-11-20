@@ -1,0 +1,52 @@
+div {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for each pair */
+  grid-gap: 16px;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%; /* Make inputs fill the available width */
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 16px;
+  color: #333;
+}

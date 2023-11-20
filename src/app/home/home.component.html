@@ -1,0 +1,56 @@
+<div>
+  <h2>Prediction Form</h2>
+
+  <form [formGroup]="inputDataForm">
+    <div>
+      <label for="names">Names:</label>
+      <input type="text" id="names" formControlName="names" />
+    </div>
+
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" formControlName="age" />
+    </div>
+
+    <div>
+      <label for="total_Purchase">Total Purchase:</label>
+      <input type="number" id="total_Purchase" formControlName="total_Purchase" />
+    </div>
+
+    <div>
+      <label for="account_Manager">Account Manager:</label>
+      <input type="number" id="account_Manager" formControlName="account_Manager" />
+    </div>
+
+    <div>
+      <label for="years">Years:</label>
+      <input type="number" id="years" formControlName="years" />
+    </div>
+
+    <div>
+      <label for="num_Sites">Num Sites:</label>
+      <input type="number" id="num_Sites" formControlName="num_Sites" />
+    </div>
+
+    <div>
+      <label for="location">Location:</label>
+      <input type="text" id="location" formControlName="location" />
+    </div>
+
+    <div>
+      <label for="company">Company:</label>
+      <input type="text" id="company" formControlName="company" />
+    </div>
+
+    <button type="button" (click)="predict()">Make Prediction</button>
+    
+<button type="button" (click)="consume()">Consume</button>
+
+<!-- Display the result of consume -->
+<h2>Consume Result</h2>
+
+<div *ngIf="consumeResult">
+  <p>{{ consumeResult }}</p>
+</div>
+  </form>
+</div>
